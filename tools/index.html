@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="d-flex">
+    Enter mobile number
+  </div>
 <div class="d-flex">
-  <input type="tel" id="input" placeholder="Enter 10 digit mobile number">
-  <button class="btn" id="button">Go</button>
+  <input type="tel" id="input" placeholder="Enter 10 digit mobile number" inputmode="numeric" pattern="[0-9]{10}">
+  <button class="btn" id="paste-btn">📋</button>
 </div>
 <br>
-<div class="d-flex">
-  <a href="" id="wa-link" target="_blank">
+<div class="d-flex" id="button-container">
+  <a href="" id="wa-link" target="_blank" class="disabled">
     <div class="btn logo-btn whatsapp-btn">
       <svg class="logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36.28 36.67">
         <defs>
@@ -38,13 +41,14 @@
       <div class="number">WhatsApp</div>
     </div>
   </a>
-  <a href="" id="tc-link" target="_blank">
+  <a href="" id="tc-link" target="_blank" class="disabled">
     <div class="btn logo-btn truecaller-btn">
       <img src="tc-logo-192.png" alt="TC-Logo" class="logo">
       <div class="number">truecaller</div>
     </div>
   </a>
 </div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src="./script.js"></script>
 </body>
 </html>
