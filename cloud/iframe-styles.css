@@ -8,14 +8,3 @@
     display: none !important;
   }
 }
-
-/* Alternative method using window check */
-@media (min-width: 0px) {
-  html:not(.no-iframe) {
-    --color-secondary: red !important;
-  }
-
-  html:not(.no-iframe) .page-footer {
-    display: none !important;
-  }
-}
