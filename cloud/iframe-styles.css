@@ -1,10 +1,7 @@
-/* Only apply when loaded inside an iframe */
-@media all and (display-mode: fullscreen) {
-  :root {
-    --color-secondary: red !important;
-  }
+:root {
+  --color-secondary: red !important;
+}
 
-  .page-footer {
-    display: none !important;
-  }
+.page-footer {
+  display: none !important;
 }
